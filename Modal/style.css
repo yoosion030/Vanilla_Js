@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-top: 300px;
+}
+
+#showModal,
+#hideModal {
+    display: block;
+    margin: 0 auto;
+    background-color: #BAC8FF;
+    outline: none;
+    border: none;
+    color: white;
+    width: 300px;
+    height: 100px;
+    font-size: 36px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#modalWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+#modal {
+    display: none;
+    background-color: white;
+    position: absolute;
+    width: 400px;
+    height: 600px;
+    padding: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.comment {
+    height: 450px;
+}
