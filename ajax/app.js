@@ -1,25 +1,15 @@
 const article = document.querySelector('article')
 
-function htmlClick() {
-  fetch('1.html').then(function (response) {
+function fetchPage(name) {
+  fetch(name).then(function (response) {
     response.text().then(function (text) {
       document.querySelector('article').innerHTML = text
     })
   })
 }
 
-function cssClick() {
-  fetch('2.html').then(function (response) {
-    response.text().then(function (text) {
-      document.querySelector('article').innerHTML = text
-    })
-  })
-}
-
-function jsClick() {
-  fetch('3.html').then(function (response) {
-    response.text().then(function (text) {
-      document.querySelector('article').innerHTML = text
-    })
-  })
+if (location.hash) {
+  fetchPage(location.hash.substring(2))
+  console.log('hu')
+} else {
 }

@@ -8,7 +8,7 @@
   </head>
 
   <body>
-    <h1><a href="index.html">WEB</a></h1>
+    <h1><a href="/Ajax/">WEB</a></h1>
     <input
       id="night_day"
       type="button"
@@ -18,9 +18,13 @@
   "
     />
     <ol>
-      <li><a onclick="htmlClick()">HTML</a></li>
-      <li><a onclick="cssClick()">CSS</a></li>
-      <li><a onclick="jsClick()">JavaScript</a></li>
+      <li><a href="#!html" onclick="fetchPage('html.html')">HTML</a></li>
+      <li><a href="#!css" onclick="fetchPage('css.html')">CSS</a></li>
+      <li>
+        <a href="#!javascript" onclick="fetchPage('javascript.html')"
+          >JavaScript</a
+        >
+      </li>
     </ol>
     <article></article>
     <script src="../Ajax/app.js"></script>
